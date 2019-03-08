@@ -1,6 +1,0 @@
-source https://www.nuget.org/api/v2
-framework:net46
-content:none
-redirects:on
-nuget Microsoft.ApplicationInsights.WindowsServer
-nuget Suave

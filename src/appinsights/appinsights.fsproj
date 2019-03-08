@@ -1,17 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net462</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="../configuration.fs" />
-    <Compile Include="../diagnostics.fs" />
+    <Compile Include="suave-appinsights.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="FSharp.Core" Version="4.5.2" />
     <PackageReference Include="Suave" Version="2.5.3" />
     <PackageReference Include="Microsoft.ApplicationInsights" Version="2.9.1" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Configuration" />
+    <PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.9.1" />
   </ItemGroup>
 </Project>
